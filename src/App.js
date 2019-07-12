@@ -5,14 +5,15 @@ const utils = require('./utils/Utils.js');
 
 const app = express();
 
-
+//localhost is 3050
+const PORT = process.env.PORT || 3050;
 
 /* ROUTES */
 //app.com ==> root URL
 //app.com/help
 //app.com/about
 
-const PORT = 3050;
+
 
 //app.use APPROACH Setup static directory to serve =============================
 const pathDirectory = path.join(__dirname, '../public');
